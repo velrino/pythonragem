@@ -3,6 +3,7 @@ import sys
 sys.path.insert(0, './lib')
 
 import HelloWolrd
+import Location
 
 
 def run():
@@ -15,12 +16,11 @@ def choose(value):
     if value == 1:
         HelloWolrd.main()
     elif value == 2:
-        print '2 - Not implemented'
+        Location.main()
     elif value == 3:
         print '3 - Not implemented'
     else:
         print 'Invalid option'
-        run()
 	return;
 
 def menu():
@@ -28,7 +28,7 @@ def menu():
     print 'Your Options'
     print '************************'
     print '1 - Hello Wolrd'
-    print '2 - Not implemented'
+    print '2 - Location'
     print '3 - Not implemented'
     print '************************'
     return;
